@@ -25,6 +25,7 @@
         "./src/*",
         "./src/**/*",
         "./types/**/*",
-        "./node_modules/vue-mapp/ts"
+        "./node_modules/vue-mapp/ts",
+        "./node_modules/vue-mapp/types",
     ]
 }

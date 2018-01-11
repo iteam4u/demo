@@ -8,6 +8,8 @@ div.api-demo.bg-light
             slot(name="code")
     div.api-demo__params.api-demo__block.md-5
         div.api-demo__title Component Options
+        div.api-demo__params-about
+            slot(name="about")
         slot
 </template>
 
@@ -37,6 +39,7 @@ export default class Hello extends Vue {
         box: horizontal center middle;
         padding: 24px;
         flex-basis: 50%;
+        min-height: 160px;
 
         .api-demo__title {
             position: absolute;
@@ -50,20 +53,28 @@ export default class Hello extends Vue {
         line-height: 1;
         text-transform: uppercase;
         font-weight: 500;
-        opacity: .40;
+        opacity: .56;
     }
 
     &__code {
         flex-basis: 50%;
+        min-height: 128px;
+        height: 100%;
     }
 
     &__left {
         box: vertical;
+        overflow: auto;
     }
 
     &__params {
         border: 0 0 0 1px / solid;
         padding: 24px 24px;
+        overflow: auto;
+
+        &-about {
+            margin-bottom: 32px;
+        }
 
         .api-demo__title {
             margin-bottom: 24px;

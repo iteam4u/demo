@@ -5,15 +5,15 @@ import { Mutation } from 'vuex-class';
 @Component
 export default class RoutePage extends Vue {
 
-    title: string = 'ff'
-    subtitle: string = ''
+    routeTitle: string = 'ff'
+    routeSubtitle: string = ''
 
     @Mutation setTitle
 
     beforeRouteEnter(to, from, next) {
 
         next((vm: RoutePage) => {
-            vm.setTitle([vm.title, vm.subtitle])
+            vm.setTitle([vm.routeTitle, vm.routeSubtitle])
         });
     }
 }

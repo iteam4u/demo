@@ -5,7 +5,9 @@ const commonVars = {
     md: '1024px',
     lg: '1440px',
     xl: '1920px',
-    transition: '.4s cubic-bezier(.25,.8,.25,1)'
+    transition: '.4s cubic-bezier(.25,.8,.25,1)',
+    margin: '24px',
+    'margin-half': '12px'
 }
 
 const colors = {
@@ -386,11 +388,11 @@ module.exports = function({ file, options, env }) {
                 path: 'src'
             },
             'postcss-size': {},
+            'postcss-for': {},
             'postcss-mixins': {},
             'postcss-apply': {
                 sets: templates
             },
-            'postcss-for': {},
             'postcss-nested': {},
             'postcss-simple-vars': {
                 variables: Object.assign(

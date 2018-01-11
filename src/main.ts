@@ -4,20 +4,20 @@ import App from './App.vue'
 import router from './router'
 import Prism from 'prismjs';
 import globalComponents from './components/global';
-import vmLayout from 'vue-mapp/ts/layout'
-import vmButton from 'vue-mapp/ts/button'
-import vmIcon from 'vue-mapp/ts/icon';
-import list from 'vue-mapp/js/list';
+import list from 'vue-mapp/js/list'
+import VueMapp from 'vue-mapp/ts';
+import VueMappComponents from 'vue-mapp/ts/all';
 import store from './store'
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace';
+import './style.postcss';
 
 Vue.config.productionTip = false
 
-Vue.use(vmLayout)
-Vue.use(vmButton)
-Vue.use(vmIcon)
+
 Vue.use(list);
 Vue.use(globalComponents);
+Vue.use(VueMapp);
+Vue.use(VueMappComponents);
 
 Prism.plugins.NormalizeWhitespace.setDefaults({
     'remove-trailing': true,

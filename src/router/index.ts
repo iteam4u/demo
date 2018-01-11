@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Button from '@/pages/Button.vue';
+import Checkbox from '@/pages/Checkbox.vue';
 
 Vue.use(Router)
 
@@ -15,6 +16,11 @@ export default new Router({
             path: '/button',
             name: 'button',
             component: Button
+        },
+        {
+            path: '/checkbox',
+            name: 'checkbox',
+            component: Checkbox
         },
         {
             path: '*',

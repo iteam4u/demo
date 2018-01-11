@@ -76,6 +76,7 @@ export default class ApiCode extends Vue {
     font-weight: 500;
     order: 2;
     box: vertical;
+    height: 100%;
 
     &__toolbar {
         padding: 16px 16px 16px 24px;
@@ -90,6 +91,7 @@ export default class ApiCode extends Vue {
     &__content {
         flex-grow: 1;
         overflow: auto;
+        height: calc(100% - 62px);
     }
 
     &__actions {
@@ -112,6 +114,7 @@ export default class ApiCode extends Vue {
 
     pre {
         margin: 0;
+        height: 100%;
         padding: 0 24px;
         overflow: auto;
         font-size: 1em;

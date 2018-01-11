@@ -13,6 +13,10 @@ const menu: Menu[] = [
     {
         title: 'Button',
         route: { name: 'button' }
+    },
+    {
+        title: 'Checkbox',
+        route: { name: 'checkbox' }
     }
 ]
 
