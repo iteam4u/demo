@@ -1,12 +1,27 @@
 /* HELPERS */
 
+$margin: 24px;
+$margin-h: 12px;
+$margin-2h: 6px;
+$margin-3h: 4px;
+
 .vpad {
     padding-top: $margin;
     padding-bottom: $margin;
 
     &-h {
-        padding-top: $margin-half;
-        padding-bottom: $margin-half;
+        padding-top: $margin-h;
+        padding-bottom: $margin-h;
+    }
+
+    &-2h {
+        padding-top: $margin-2h;
+        padding-bottom: $margin-2h;
+    }
+
+    &-3h {
+        padding-top: $margin-3h;
+        padding-bottom: $margin-3h;
     }
 }
 
@@ -15,8 +30,8 @@
     padding-right: $margin;
 
     &-h {
-        padding-left: $margin-half;
-        padding-right: $margin-half;
+        padding-left: $margin-h;
+        padding-right: $margin-h;
     }
 }
 
@@ -24,7 +39,7 @@
     padding: $margin;
 
     &-h {
-        padding: $margin-half;
+        padding: $margin-h;
     }
 }
 
@@ -32,7 +47,7 @@
     padding-bottom: $margin;
 
     &-h {
-        padding-bottom: $margin-half;
+        padding-bottom: $margin-h;
     }
 }
 
@@ -40,6 +55,6 @@
     padding-top: $margin;
 
     &-h {
-        padding-top: $margin-half;
+        padding-top: $margin-h;
     }
 }

@@ -27,8 +27,8 @@ api-demo
         .vm-row
             vm-radio(marker="model") as v-model
             vm-radio(marker="value") as value and @input
-        .vpad-h currentValue: {{ model }}
-        vm-checkbox(v-model="isArray" @click="toggleArray") Switch to Array
+        .vpad-3h modelValue: {{ model }}
+        vm-checkbox(v-model="isArray" @click="toggleArray") Switch modelValue to Array
 
 
     vm-field(
@@ -38,7 +38,7 @@ api-demo
         :disabled="!isArray"
     )
         .vm-row
-            vm-radio(marker="value" ) string
+            vm-radio(marker="value") string
             vm-radio(:marker="0") number
             vm-radio(:marker="testObject") object
 

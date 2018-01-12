@@ -1,20 +1,22 @@
 <template lang="pug">
-vm-layout(
-    ref="layout"
-    :title="title"
-    :subtitle="subtitle"
-)
-    router-view
+div Привет
+    vm-button(v-if="show") Кнопка
+//- vm-layout(
+//-     ref="layout"
+//-     :title="title"
+//-     :subtitle="subtitle"
+//- )
+//-     router-view
 
-    div.sidebar(slot="sidebar")
-        div.sidebar-header.vm-layout__header-top Vue Material Application
-        div.sidebar-content
-            vm-list.sidebar-nav(slot="sidebar" nav dense)
-                vm-list-item(
-                    v-for="route in menu"
-                    :key="route.title"
-                    @click="$router.push(route.route)"
-                ) {{ route.title }}
+//-     div.sidebar(slot="sidebar")
+//-         div.sidebar-header.vm-layout__header-top Vue Material Application
+//-         div.sidebar-content
+//-             vm-list.sidebar-nav(slot="sidebar" nav dense)
+//-                 vm-list-item(
+//-                     v-for="route in menu"
+//-                     :key="route.title"
+//-                     @click="$router.push(route.route)"
+//-                 ) {{ route.title }}
 </template>
 
 <script lang="ts">
@@ -25,6 +27,8 @@ import { State, Mutation } from 'vuex-class'
     name: 'app'
 })
 export default class App extends Vue {
+    show: boolean = false;
+
     @State('title') title;
     @State subtitle;
     @State menu;

@@ -19,7 +19,12 @@
         "suppressImplicitAnyIndexErrors": true,
         "strictNullChecks": true,
         "noImplicitThis": true,
-        "removeComments": true
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "removeComments": true,
+        "paths": {
+            "vue-mapp": ["./node_modules/vue-mapp/es5"]
+        }
     },
     "include": [
         "./src/*",

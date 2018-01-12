@@ -5,9 +5,7 @@ const commonVars = {
     md: '1024px',
     lg: '1440px',
     xl: '1920px',
-    transition: '.4s cubic-bezier(.25,.8,.25,1)',
-    margin: '24px',
-    'margin-half': '12px'
+    transition: '.4s cubic-bezier(.25,.8,.25,1)'
 }
 
 const colors = {
